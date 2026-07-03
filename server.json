@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.runfleets/cli",
+  "title": "Fleets",
+  "description": "Multi-site analytics as tools: GA4, Search Console, Cloudflare edge, PageSpeed, insights.",
+  "version": "0.2.1",
+  "websiteUrl": "https://fleets.run",
+  "repository": {
+    "url": "https://github.com/runFleets/cli",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "fleets-mcp",
+      "version": "0.2.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "FLEETS_TOKEN",
+          "description": "Fleets personal access token (fl_...). Optional if you have already run `fleets login`; otherwise mint one at https://fleets.run/app/account?tab=cli.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

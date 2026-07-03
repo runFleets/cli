@@ -109,14 +109,14 @@ Claude Desktop / Cursor (`claude_desktop_config.json` or `.cursor/mcp.json`):
 }
 ```
 
-No global install? Use `npx`:
+No global install? Use `npx` with the [`fleets-mcp`](https://www.npmjs.com/package/fleets-mcp) launcher package:
 
 ```json
 {
   "mcpServers": {
     "fleets": {
       "command": "npx",
-      "args": ["-y", "-p", "fleets", "fleets-mcp"]
+      "args": ["-y", "fleets-mcp"]
     }
   }
 }

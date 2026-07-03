@@ -1,0 +1,38 @@
+{
+  "name": "fleets-mcp",
+  "version": "0.2.1",
+  "description": "MCP server for Fleets — multi-site GA4, Search Console, Cloudflare & PageSpeed analytics exposed as tools",
+  "mcpName": "io.github.runfleets/cli",
+  "type": "module",
+  "bin": {
+    "fleets-mcp": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "analytics",
+    "ga4",
+    "cloudflare",
+    "search-console",
+    "fleets"
+  ],
+  "license": "MIT",
+  "author": "Yoann Defay",
+  "homepage": "https://fleets.run",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/runFleets/cli.git",
+    "directory": "mcp"
+  },
+  "bugs": "https://github.com/runFleets/cli/issues",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "fleets": "^0.2.1"
+  }
+}
